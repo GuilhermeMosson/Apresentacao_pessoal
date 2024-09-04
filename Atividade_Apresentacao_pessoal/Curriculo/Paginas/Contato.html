@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="cabeca">
+      <div>
+        <h4 class="Home-texto"><a href="Index.html">Bem Vindo</a></h4>
+      </div>
+        <ul class="cabecalho">
+            <li><a href="SobreMim.html">Sobre mim</a></li>
+            <li><a href="Portfolio.html">Portfólio</a></li>
+            <li><a href="Objetivos.html">Objetivos</a></li>
+            <li><a href="Contato.html">Meu Contato</a></li>
+        </ul>
+    </header>    
+    <div class="contatoDiv" id="contato">
+        <div class="leftContact">
+            <div class="contatoTexto">
+                <h2>Contatos</h2>
+                <p>Mande-me mensagens</p>
+            </div>
+            <div class="labelContato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+            </div>
+            <div class="labelContato">
+                <label for="mensagem">Mensagem:</label>
+                <textarea type="text" id="mensagem"></textarea>
+            </div>
+            <button onclick="conferirMensagem()" id="msg">Conferir Dados</button>
+        </div>
+        <div class="rightContact">
+            <div id="textRight">
+                <p>Confirme seus dados:</p>
+            </div>
+            <div class="confirma_div">
+                <p>Nome: <br><div id="spanNome"><span id="confNome"></span></div></p>
+                <p>Mensagem: <br><div id="spanMsg"><span id="confMsg"></span></div></p>
+            </div>
+            <button onclick="enviar()" id="enviar">Enviar</button>
+            <p><br>Ou me envie um Emal: <br>Emalfalso@gmail</p>
+        </div>
+    </div>
+</body>
+</html>
