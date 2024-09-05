@@ -185,12 +185,14 @@ a:hover{
   width: 600px;
 }
 
-.Desc2{
+.desc2{
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  align-items: center;
   text-decoration: none;
+  gap: 15px;
 }
+
 
 .descDiv1{
   border: 2px solid rgba(0, 0, 0, 0.678);
