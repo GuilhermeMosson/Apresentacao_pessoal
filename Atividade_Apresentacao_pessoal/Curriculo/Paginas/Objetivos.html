@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Objetivos</title>
-    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,5 +35,86 @@
             </div>
         </div>
     </div>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            overflow-x: hidden;
+            background-color:azure;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: rgba(73, 73, 73, 0.877);
+            width: 100%;
+            height: 60px;
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+        }
+
+        .cabecalho{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            padding-top: 12px;
+            font-size: 1.3rem;
+        }
+
+        .Home-texto{
+            display: flex;
+            position: absolute;
+            padding-top: 11px;
+            font-size: 1.5rem;
+        }
+
+        a{
+            text-decoration: none;
+            color:azure;
+        }
+
+        a:hover{
+            color:crimson;
+            cursor: pointer;
+        }
+
+
+        .descNome{
+            font-family: "Outfit", sans-serif;
+            font-weight: bold;
+            text-align: left;
+            font-size: 1.8REM;
+            margin-left: 30px;
+            margin-bottom: 50px;
+            margin-top: 80px;
+        }
+
+        .descDiv{
+            border: 1.5px solid rgba(37, 37, 37, 0.678);
+            border-radius: 10px;
+            font-size: 1.4rem;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 800;
+            height: auto;
+            padding: 15px;
+            margin-left: 30px;
+            width: 600px;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    </style>
 </body>
 </html>

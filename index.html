@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="Atividade_Apresentacao_pessoal/Curriculo/Paginas/style.css">
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header id="cabeca">
       <div>
-        <h4 class="Home-texto"><a href="../Atividade_Apresentacao_pessoal/Index.html">Bem Vindo</a></h4>
+        <h4 class="Home-texto"><a href="index.html">Bem Vindo</a></h4>
       </div>
         <ul class="cabecalho">
             <li><a href="Atividade_Apresentacao_pessoal/Curriculo/Paginas/SobreMim.html">Sobre mim</a></li>
@@ -24,14 +26,14 @@
         </ul>
     </header>    
 
-    <div class="perfil01"  id="perfil01">
+    <div class="perfil"  id="perfil01">
         <div>
             <div class="rel">
-                <img class="fotoPerfil01" src="https://cdn-icons-png.flaticon.com/512/4794/4794936.png" 
-                alt="perfil 1">
+                <img class="fotoPerfil" src="./Atividade_Apresentacao_pessoal/Curriculo/Imagens/foto-perfil.jpg" 
+                alt="foto perfil">
             </div>
         </div>
-        <div>
+        <div class="conteiner">
             <h1 class="nome">Guilherme H. Mosson</h1>
             <div class="descDiv">
                 <p class="desc">Me Chamo Guilherme Hoinski Mosson, sou Curitibano, com 17 anos. Estudo no colégio Sesi Celso Charui, no 3° ano
@@ -40,5 +42,130 @@
             </div>
         </div>
     </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            overflow-x: hidden;
+            background-color:azure;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: rgba(73, 73, 73, 0.877);
+            width: 100%;
+            height: 60px;
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+        }
+
+        .cabecalho{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            list-style: none;
+            padding-top: 12px;
+            font-size: 1.3rem;
+        }
+
+        .Home-texto{
+            display: flex;
+            position: absolute;
+            padding-top: 11px;
+            font-size: 1.5rem;
+        }
+
+        a{
+            text-decoration: none;
+            color:azure;
+        }
+
+        a:hover{
+            color:crimson;
+            cursor: pointer;
+        }
+
+        .perfil{ 
+            padding-top: 20px;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 150px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.411);
+        }
+
+        .rel{
+            position: relative;
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid rgba(0, 0, 0, 0.678);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .fotoPerfil{
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            left: -20px;
+            transition: all 300ms linear;
+        }
+
+        .fotoPerfil:hover{
+            transform: scale(1.2);
+            transition: all 300ms linear;
+        }
+
+        .conteiner{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nome{
+            border: 2px solid rgba(0, 0, 0, 0.678);
+            border-radius: 10px ;
+            width: 600px;
+            height: auto;
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 50px;
+            padding: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            font-family: "Outfit", sans-serif;
+            font-weight: 400;
+        }
+
+        .descDiv{
+            border: 2px solid rgba(0, 0, 0, 0.678);
+            border-radius: 10px;
+            font-size: 1.3rem;
+            font-weight: 800;
+            font-family: 'Kanit', sans-serif;
+            height: auto;
+            width: 600px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    </style>
 </body>
 </html>
